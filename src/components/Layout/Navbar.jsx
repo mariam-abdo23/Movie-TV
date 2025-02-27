@@ -12,7 +12,7 @@ export default function Navbar() {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse mt-2 navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto d-flex gap-5 fw-bold fs-5 mb-lg-0">
             <li className="nav-item">
               <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
@@ -25,12 +25,16 @@ export default function Navbar() {
               <NavLink className="nav-link" to="/People">People</NavLink>
             </li>
           </ul>
+          <div>
+          <button className='mode ' onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? "Light Mode" : "Dark Mode"}
+      </button>
+          </div>
+       
         </div>
       </div>
       
-      <button className='mode' onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+      
 
     </nav>
     <br />

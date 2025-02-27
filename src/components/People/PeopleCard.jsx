@@ -5,10 +5,10 @@ export default function PeopleCard({ items }) {
   const [selectedId, setSelectedId] = useState(null);
 
   return (
-    <div className="container mt-5">
-      <div className="row  d-flex justify-content-center">
+    <div className="container  mt-5">
+      <div className="row d-flex justify-content-center">
         {items.map((item) => (
-          <div key={item.id} className="col-lg-3 col-md-12 col-sm-12 item-card">
+          <div key={item.id} className="col-lg-3 col-md-12 col-sm-12 text-center item-card ">
             <img
               src={`https://image.tmdb.org/t/p/w500${item.profile_path}`}
               alt={item.name}

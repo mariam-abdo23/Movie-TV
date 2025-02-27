@@ -42,10 +42,11 @@ body.dark-mode {
 }
 
 .mode {
-padding: 10px;
- margin-right: 80px;
+padding: 8px;
+margin-left: 20px;
+margin-top: 8px;
   cursor: pointer;
-  background-color: black;
+  background-color: rgb(89, 0, 0);
   color: white;
   border: 1px solid black;
   border-radius: 40px;
