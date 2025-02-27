@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 export default function HomeCard({ movies }) {
     return (
@@ -20,7 +20,7 @@ export default function HomeCard({ movies }) {
                                 <p className="text-secondary">{movie.release_date}</p>
                                 <p className="text-secondary"><span style={{color:'brown'}}>Vote Average : </span> {movie.vote_average}</p>
                             </div>
-                            <a href= {`/details/${movie.id}`} className="btn ms-4" style={{backgroundColor:'brown' , color:'white'}}>View Details</a>
+                            <Link to= {`/details/${movie.id}`} className="btn ms-4" style={{backgroundColor:'brown' , color:'white'}}>View Details</Link>
                         
                     </div>
                 ))}
